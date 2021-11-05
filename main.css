@@ -1,11 +1,12 @@
 html {
     font-size: 100%;
-    background-color: lightgrey;
+    background-color: rgb(225, 225, 225);
 }
 
 body {
-    background-color: aqua;
-    margin: 1rem 7rem;
-    padding: 1rem;
+    background-color: rgb(240, 240, 240);
+    margin: 1rem 10rem;
+    padding: 0.1rem 2rem;
+    border-radius: 0.25rem;
 }
 
