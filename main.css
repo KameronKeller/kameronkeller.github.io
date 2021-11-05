@@ -1,0 +1,11 @@
+html {
+    font-size: 100%;
+    background-color: lightgrey;
+}
+
+body {
+    background-color: aqua;
+    margin: 1rem 7rem;
+    padding: 1rem;
+}
+
