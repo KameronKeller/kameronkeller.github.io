@@ -2,13 +2,10 @@ html {
     font-size: 100%;
     /* font-family: Helvetica, Arial, sans-serif; */
     font-family: Monaco, 'Courier New', monospace;
-    /* background-color: rgb(226, 226, 226); */
-    /* background-color: #2a2e31; */
     background-color: rgb(15, 45, 50);
 }
 
 body {
-    /* background-color: rgb(238, 238, 238); */
     color: white;
     margin: 1rem 5rem;
     padding: 0.1rem 3rem;
@@ -23,9 +20,7 @@ input[type=text] {
     border-width:0px;
     border:none;
     width: 100%;
-    /* padding: 12px 20px; */
     margin: 8px 0;
-    /* box-sizing: border-box; */
 }
 
 #prompt::placeholder {
