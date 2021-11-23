@@ -32,3 +32,16 @@ input:focus {
     outline:none!important;
 }
 
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: turquoise;
+    text-decoration: underline;
+  }
+
+.construction {
+    color: rgb(175, 140, 45);
+}
