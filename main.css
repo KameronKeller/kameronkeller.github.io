@@ -47,8 +47,18 @@ a:hover {
 }
 
 .project_box {
-    border: 1px solid turquoise;
+    border: 1px solid rgb(32, 112, 104);
     border-radius: 0.25rem;
-    padding: 0.1rem 1rem;
+    /* padding: 0.1rem 1rem 0.1rem 0; */
     width: 75%;
+}
+
+.projectDescription {
+    vertical-align: top;
+    padding: 1rem;
+}
+
+.projectImage {
+    border-radius: 0.25rem;
+    max-width: 20rem;
 }
