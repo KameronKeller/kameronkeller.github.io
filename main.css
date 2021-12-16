@@ -45,3 +45,10 @@ a:hover {
 .construction {
     color: rgb(175, 140, 45);
 }
+
+.project_box {
+    border: 1px solid turquoise;
+    border-radius: 0.25rem;
+    padding: 0.1rem 1rem;
+    width: 75%;
+}
