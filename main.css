@@ -3,24 +3,30 @@ html {
     /* font-family: Helvetica, Arial, sans-serif; */
     font-family: Monaco, 'Courier New', monospace;
     background-color: rgb(15, 45, 50);
+    margin-top: 0;
+}
+
+label {
+    display: flex;
 }
 
 body {
     color: white;
-    margin: 1rem 5rem;
-    padding: 0.1rem 3rem;
+    margin: 0;
+    padding: 0;
     border-radius: 0.25rem;
 }
 
 input[type=text] {
     font-family: Monaco, 'Courier New', monospace;
     color:turquoise;
-    font-size: 2rem;
+    /*font-size: 2rem;*/
     background-color: transparent;
     border-width:0px;
     border:none;
     width: 100%;
-    margin: 8px 0;
+    margin: 0;
+    padding: 0;
 }
 
 #prompt::placeholder {
@@ -42,23 +48,4 @@ a:hover {
     text-decoration: underline;
   }
 
-.construction {
-    color: rgb(175, 140, 45);
-}
 
-.project_box {
-    border: 1px solid rgb(32, 112, 104);
-    border-radius: 0.25rem;
-    /* padding: 0.1rem 1rem 0.1rem 0; */
-    width: 75%;
-}
-
-.projectDescription {
-    vertical-align: top;
-    padding: 1rem;
-}
-
-.projectImage {
-    border-radius: 0.25rem;
-    max-width: 20rem;
-}
