@@ -2,3 +2,39 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #000;
+}
+
+.prompter {
+  margin: .5rem;
+}
+
+.navbar-links ul {
+  margin:  0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: .5rem;
+}
+
+.navbar-links a:hover {
+  color: turquoise;
+}
