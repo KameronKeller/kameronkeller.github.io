@@ -5,17 +5,21 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #292a2d;
 }
 
 .navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: #222;
-  color: #000;
+  background-color: #252627;
+  color: #fff;
+  font-family: Monaco, 'Courier New', monospace;
 }
 
 .prompter {
+  font-size: 1rem;
   margin: .5rem;
 }
 
@@ -30,11 +34,82 @@ body {
 }
 
 .navbar-links li a {
+  display: block;
   text-decoration: none;
   color: white;
-  padding: .5rem;
+  padding: .75rem;
 }
 
 .navbar-links a:hover {
   color: turquoise;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none; /* Not displayed by default */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    font-size: 1rem;
+    font-family: Monaco, 'Courier New', monospace;
+    color:turquoise;
+    background-color: transparent;
+    border-width:0px;
+    border:none;
+    width: 60%;
+}
+
+#prompt::placeholder {
+    color: turquoise;
+    opacity: 0.5;
+  }
+
+input:focus {
+    outline:none!important;
+}
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
 }
