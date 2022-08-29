@@ -2,9 +2,33 @@
 layout: default
 title: "Home"
 ---
+<article>
+  <h1>Kameron Keller</h1>
+  <p>Software Engineer</p>
+  <table>
+    <tr>
+      <td>Email:</td>
+      <td>123@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Github:</td>
+      <td>gh link</td>
+    </tr>
+    <tr>
+      <td>LinkedIn:</td>
+      <td>linkedinlink</td>
+    </tr>
+  </table>
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Projects" %}
-{% endif %}
+  <hr>
+
+  <h1>Notable Projects</h1>
+
+  {% for post in site.posts %}
+    {% if post.featured == true %}
+      <p>{{ post.title }}</p>
+    {% endif %}
+
+  {% endfor %}
+</article>
+
