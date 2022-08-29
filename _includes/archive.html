@@ -1,4 +1,4 @@
-<article>
+<!-- <article>
   <ul class="archive">
     {% for post in site.posts %}
     <li>
@@ -8,3 +8,25 @@
     {% endfor %}
   </ul>
 </article>
+ -->
+
+ <article>
+   <table>
+     <tr>
+       <th>Project</th>
+       <th>Technologies</th>
+       <th>Github Link</th>
+       <th>Completion Date</th>
+     </tr>
+     {% for post in site.posts %}
+        <tr>
+          <td><a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
+          <td>{{ post.tags }}</td>
+          <td>link</td>
+          <td><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></td>
+        </tr>
+     {% endfor %}
+   </table>
+
+
+ </article>
