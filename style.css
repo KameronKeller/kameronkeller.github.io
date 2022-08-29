@@ -6,19 +6,33 @@ body {
   margin: 0;
   padding: 0;
   background-color: #292a2d;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #252627;
+}
+
+.main-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
 }
 
 .navbar {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: #252627;
   color: #fff;
-  font-family: Monaco, 'Courier New', monospace;
+  
 }
 
 .prompter {
+  font-family: Monaco, 'Courier New', monospace;
   font-size: 1rem;
   margin: .5rem;
 }
@@ -31,6 +45,7 @@ body {
 
 .navbar-links li {
   list-style: none;
+  /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
 .navbar-links li a {
@@ -94,6 +109,7 @@ input:focus {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
   }
 
   .navbar-links ul {
@@ -112,4 +128,9 @@ input:focus {
   .navbar-links.active {
     display: flex;
   }
+
+  .main-content {
+    width: 95%;
+
+}
 }
