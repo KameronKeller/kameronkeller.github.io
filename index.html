@@ -1,39 +1,39 @@
 ---
 layout: mvp
-title: "Home"
+title: "Portfolio"
 ---
-<article>
-  <div class="flex-container">
-    <div class="2-column">
-      <h1 class="name-title">Kameron Keller</h1>
-      <p>Software Engineer</p>
-    </div>
-    <div class="2-column">
-      <table>
-        <tr>
-          <td>Email:</td>
-          <td>123@gmail.com</td>
-        </tr>
-        <tr>
-          <td>Github:</td>
-          <td>gh link</td>
-        </tr>
-        <tr>
-          <td>LinkedIn:</td>
-          <td>linkedinlink</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-  <hr>
 
-  <h1>Notable Projects</h1>
-  <div class="flex-container">
-    {% for post in site.posts %}
-      {% if post.featured == true %}
-        <div class="featured-project">{{ post.title }}</div>
-      {% endif %}
-    {% endfor %}
+<div class="flex-container">
+  <div class="item-40">
+    <h1><a href="/">Kameron Keller</a></h1>
+    <p>Software Engineer</p>
   </div>
-</article>
+  <div class="item-60">
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Contact
+          </th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Email:</td>
+        <td><a href="mailto:kkeller.works@gmail.com">kkeller.works@gmail.com</a></td>
+      </tr>
+      <tr>
+        <td>Github:</td>
+        <td><a href="https://github.com/KameronKeller">KameronKeller</a></td>
+      </tr>
+      <tr>
+        <td>LinkedIn:</td>
+        <td><a href="https://www.linkedin.com/in/kameron-keller">Kameron-Keller</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
 
+
+<h2>Notable Projects</h2>
+
+</div>
