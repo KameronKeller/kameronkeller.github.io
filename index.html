@@ -3,32 +3,37 @@ layout: default
 title: "Home"
 ---
 <article>
-  <h1>Kameron Keller</h1>
-  <p>Software Engineer</p>
-  <table>
-    <tr>
-      <td>Email:</td>
-      <td>123@gmail.com</td>
-    </tr>
-    <tr>
-      <td>Github:</td>
-      <td>gh link</td>
-    </tr>
-    <tr>
-      <td>LinkedIn:</td>
-      <td>linkedinlink</td>
-    </tr>
-  </table>
-
+  <div class="flex-container">
+    <div class="2-column">
+      <h1 class="name-title">Kameron Keller</h1>
+      <p>Software Engineer</p>
+    </div>
+    <div class="2-column">
+      <table>
+        <tr>
+          <td>Email:</td>
+          <td>123@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Github:</td>
+          <td>gh link</td>
+        </tr>
+        <tr>
+          <td>LinkedIn:</td>
+          <td>linkedinlink</td>
+        </tr>
+      </table>
+    </div>
+  </div>
   <hr>
 
   <h1>Notable Projects</h1>
-
-  {% for post in site.posts %}
-    {% if post.featured == true %}
-      <p>{{ post.title }}</p>
-    {% endif %}
-
-  {% endfor %}
+  <div class="flex-container">
+    {% for post in site.posts %}
+      {% if post.featured == true %}
+        <div class="featured-project">{{ post.title }}</div>
+      {% endif %}
+    {% endfor %}
+  </div>
 </article>
 
