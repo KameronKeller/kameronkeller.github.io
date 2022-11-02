@@ -1,9 +1,14 @@
+
+a[href^="mailto:"]::before {
+    content: none;
+}
+
 .flex-container {
     display: flex;
     flex-direction: column;
 }
 
-.col {
+.item {
     max-width: 100%;
 }
 
@@ -14,7 +19,15 @@
         flex-direction: row;
     }
 
-    .col {
+    .item-60 {
+        width: 60%
+    }
+
+    .item-40 {
+        width: 40%
+    }
+
+    .item {
         width: 50%;
     }
 }
