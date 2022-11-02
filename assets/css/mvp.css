@@ -1,1 +1,21 @@
-<link rel="stylesheet" href="/assets/css/styles.css">
+@media only screen and (min-width: 768px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col {
+        max-width: 100%;
+    }
+}
