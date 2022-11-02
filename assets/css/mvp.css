@@ -1,21 +1,20 @@
-@media only screen and (min-width: 768px) {
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .col {
-        width: 50%;
-    }
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
 
-@media only screen and (min-width: 640px) {
+.col {
+    max-width: 100%;
+}
+
+
+@media (min-width: 640px) {
     .flex-container {
         display: flex;
         flex-direction: row;
     }
 
     .col {
-        max-width: 100%;
+        width: 50%;
     }
 }
