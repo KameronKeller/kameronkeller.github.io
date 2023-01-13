@@ -11,7 +11,6 @@ a[href^="mailto:"]::before {
     max-width: 100%;
 }
 
-
 @media (min-width: 640px) {
     .flex-container {
         display: flex;
@@ -29,4 +28,8 @@ a[href^="mailto:"]::before {
     .item {
         width: 50%;
     }
+}
+
+.project-name {
+    width: 33%;
 }
